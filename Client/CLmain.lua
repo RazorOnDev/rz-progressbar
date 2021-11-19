@@ -7,11 +7,11 @@ exports['rz-progressbar']:initProgress('Looting...', 30000)
 
 -- Test Command --
 RegisterCommand('+testProgress', function(source, args, rawCommand)
-	initProgress('Test Progress Bar...', args[1])
+	initProgress('Progress Bar test...', args[1])
 end)
 
 -- Functions --
-function initProgress(text, time) 
+initProgress = function(text, time) 
 	SendNUIMessage({
 		display = true,
 		type = "ui",
@@ -19,3 +19,7 @@ function initProgress(text, time)
 		text = text
 	})
 end
+
+RegisterNetEvent('rz-progressbar:initProgress', function(text, time)
+    initProgress(text, time)
+end)

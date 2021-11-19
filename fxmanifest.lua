@@ -1,16 +1,27 @@
 fx_version 'cerulean'
 game 'gta5'
 
-ui_page 'Nui/index.html'
+author 'dsc.gg/rzshop'
+
+ui_page 'ui/index.html'
 
 client_scripts {
-    'client.lua'
+    'Client/CLmain.lua'
 } 
 
-files {
-    'Nui/*.html',
-    'Nui/js/*.js',
-    'Nui/css/*.css'
+server_scripts {
+    'Server/vChecker.lua'
 }
 
-export "initProgress"
+files {
+    'ui/index.html',
+    'ui/js/script.js',
+    'ui/js/jquery.js',
+    'ui/css/style.css',
+    'ui/fonts/*.ttf',
+    'ui/fonts/*.otf'
+}
+
+exports {
+    'initProgress'
+}

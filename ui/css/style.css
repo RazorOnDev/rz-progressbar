@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+@font-face {
+	font-family: inter;
+	src: url('/ui/fonts/Inter.ttf');
+}
+
+@font-face {
+    font-family: dejavu;
+    src: url(/ui/fonts/DejaVuSans.ttf)
+}
+
+#main {
+    display: none;
+    overflow: hidden;
+}
+
+#divout {
+    margin-top: 46.5%;
+    left: 42.5%;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 15%;
+    height: 28px;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid rgba(14, 14, 14, 0.979);
+    box-shadow: 0 0 .50vw black;
+}
+
+#divin {
+    background-color: #e47b0b;
+    z-index: 2;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+}
+
+#textin {
+    color: white;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Baloo Bhai';
+    margin-top: 1px;
+    text-shadow: 2px 2px 4px #141414ef;
+}
