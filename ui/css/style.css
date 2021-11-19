@@ -1,3 +1,5 @@
+/* CSS by Ryze#7988 and .Razor#0900*/
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 @font-face {
@@ -18,21 +20,23 @@
 #divout {
     margin-top: 46.5%;
     left: 42.5%;
-    background-color: rgba(0, 0, 0, 0.537);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 15%;
     height: 28px;
     z-index: 1;
-    position: relative;
+    position: absolute;
     border-radius: 5px;
-    border: 2px solid rgba(14, 14, 14, 0.979);
-    box-shadow: 0 0 .50vw black;
+    box-shadow: 0 0 10px black;
 }
 
 #divin {
-    background-color: #e47b0b;
-    z-index: 2;
+    background-color: rgba(255, 47, 47, 0.8);
     height: 100%;
     width: 0%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
 }
 
@@ -47,5 +51,5 @@
     text-align: center;
     font-family: 'Baloo Bhai';
     margin-top: 1px;
-    text-shadow: 2px 2px 4px #141414ef;
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
